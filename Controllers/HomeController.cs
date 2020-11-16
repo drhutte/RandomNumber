@@ -75,7 +75,7 @@ namespace RandomNumber.Controllers
         {
             try
             {
-                Guesses = Guesses --;
+                Guesses = Guesses -1;
                 NumberGenerator random = _derived.Where(l => l.Level == Level).FirstOrDefault();
                 random.Level = Level;
                 random.Random = Random;
