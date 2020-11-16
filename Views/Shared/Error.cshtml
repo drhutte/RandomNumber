@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+@model System.Web.Mvc.HandleErrorInfo
+    <p class="text-danger">Error.@Model.Exception.Message</p>
+
+    <p class="text-danger">An error occurred while processing your request.</p>
+
+    @Html.ActionLink("Back", @Model.ActionName, @Model.ControllerName)
+</body>
+</html>

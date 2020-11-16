@@ -1,0 +1,6 @@
+﻿@using RandomNumber.Helpers
+@model IList<RandomNumber.Models.NumberGenerator>
+@{
+    ViewBag.Title = "Random Number Guessing Game";
+}
+@HtmlGuessHelper.Home(Model)
